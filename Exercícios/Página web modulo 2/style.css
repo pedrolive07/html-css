@@ -231,6 +231,7 @@ a{/*aplica uma cor a todos os ítens que contém um link*/
 a:visited{/*aplica uma cor a todos os ítens que contém um link que já foi visitado*/
 
     color:var(--cor1);
+    /*teste de Github, testando se ele irá gravar essas alterações.*/
 
 }
 
