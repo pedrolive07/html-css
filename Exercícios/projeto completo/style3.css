@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap'); 
+
+*{/*Entrar no site google fonts*/
+
+    font-family: 'Lumanosimo', cursive;
+  
+}
+
+body{                                                        /*altera todos os body*/
+    background-image: linear-gradient(to top,#62b2c2,#8ca6bb,#bdc5a4);
+    background-attachment: fixed;
+    font-size: 1em;/*a w3c usa como padrão ou pixel (px) ou (em)* 16px é igual a 1 em*/
+    font-weight: normal;
+    /*text-decoration: underline;*//*comandos para sublinhar e outros*/
+
+}
+
+main{
+    background-image: linear-gradient(to top,#9bd9e4,#8ef5e4,#b0d1da);/*separa uma "caixa" para a seção principal e diferencia do fundo*/
+    border-radius: 10px;/*arredondamento de bordas*/
+    box-shadow: 5px 5px 15px rgb(95, 88, 88);/*forma a sombra e cor da sombra*/
+    width: 61%;/*tamanho da caixa principal, pode ser em porcentagem, pixels, auto*/
+    padding: 10px;
+    margin: auto;
+    font-family: 'Lumanosimo', cursive;
+}
+h1{/*títulos 1*/
+    color:black ;
+    
+    /*shorthand das fontes
+
+    um comando que simplifica os 4 seguintes:
+
+    -font-style;
+    -font-weight;
+    font-size;
+    -fonte-family
+
+    deve seguir a mesma orde, style, weight, size e family
+    
+    veja a aplicação abaixo*/
+
+    font: italic bolder 2em 'Lumanosimo', cursive;
+    
+}
+h2{/*títulos 2*/
+    color: #2e464b;
+    font: bold 2em 'Lumanosimo', cursive;/*pode omitir algum, desde que siga a ordem*/
+    
+}
+p{/*parágrafos*/
+    text-align: justify;
+    
+    
+}
+

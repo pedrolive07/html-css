@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{/*não esquecer de colocar o * antes de{}  */
+            height:100%;/*configuração global da css interna dessa página*/
+        }
+
+        body{
+            background-image: linear-gradient(45deg, #4D63D3 50%,#FFDA7E,#E74259,#9139BF,#DD2D75);/*no adobe colors, tem como extrair gradiente. Coloque os graus que deseja colocando o número de graus seguido de deg, tudo junto e minúsculo. A porcentagem após a cor é a porcentagem da tela que será ocupada pela cor escolhida*/
+            background-attachment: fixed;/*fixa o degradê para que não seja rolado com a página*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+
+    <hr>
+    <h1>Voltar</h1>
+    <p> Clique <a href="index.html" rel="next">aqui</a> para voltar para a primeira página</p>
+
+</body>
+</html>

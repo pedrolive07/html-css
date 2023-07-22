@@ -1,0 +1,151 @@
+@charset "UTF-8";
+@font-face {/*digitando o comando "font" ele já preenche essa parte automático, só sendo necessário colocar a url*/
+    font-family:'Love';
+    src: url('Broisther.otf');/*acrescente o comando "format(), digite uma segunda url para botar mais de um formato*/
+}
+
+*{/*Entrar no site google fonts*/
+
+    font-family: 'Arial';
+  
+}
+
+body{                                                        /*altera todos os body*/
+    background-image: linear-gradient(to top,#3D5A73,#28403D,#182625);
+    background-attachment: fixed;
+    font-size: 1em;/*a w3c usa como padrão ou pixel (px) ou (em)* 16px é igual a 1 em*/
+    font: normal 16px Arial, Verdana, Serif;
+    /*text-decoration: underline;*//*comandos para sublinhar e outros*/
+
+}
+
+main{
+    background-image: linear-gradient(to top,#455559,#28403D,#3D5A73);/*separa uma "caixa" para a seção principal e diferencia do fundo*/
+    border-radius: 5px;/*arredondamento de bordas*/
+    box-shadow: 5px 5px 15px rgb(53, 53, 53);/*forma a sombra e cor da sombra*/
+    width: 61%;/*tamanho da caixa principal, pode ser em porcentagem, pixels, auto*/
+    padding: 10px;
+    margin: auto;
+    
+}
+h1{/*títulos 1*/
+    color:rgb(177, 177, 177) ;
+    text-align: center;
+    
+    /*shorthand das fontes
+    
+    um comando que simplifica os 4 seguintes:
+
+    -font-style;
+    -font-weight;
+    font-size;
+    -fonte-family
+
+    deve seguir a mesma orde, style, weight, size e family
+    
+    veja a aplicação abaixo*/
+    font-family: 'Love';
+
+}
+
+
+
+h2#id001{/*Identificador do Título1 em específico, foi colocado um id dentro do arquivo html que o identifica*/
+
+    text-align: center;/*alteração pontual em um título específico, digamos que esse está centralizado*/
+    /*o que em html é id, em css #*/
+    /*um id só pode ser usado por 1 elemento, para usar em vários, use uma classe*/
+    color:rgb(177, 177, 177) ;
+
+}
+
+.cl001{/*classe se adiociona com um ponto em CSS*/
+    /*em CSS não se refere ao elemento, simplesmente se adiciona um ponto*/
+    /*o que em html é class, em css é .*/
+
+    color:black;
+
+}
+
+h2{/*títulos 2*/
+    color:rgb(177, 177, 177) ;
+    font-family: 'Arial';
+
+}
+
+p{/*parágrafos*/
+    text-align: justify;/*para que ele se adeque, se alinhe à esquerda e à direita*/
+    text-indent: 30px;/*tamanho do parágrafo*/
+    color:rgb(177, 177, 177) ;
+}
+
+.destaque{/*teste com marcado de classe*/
+    background-color: beige;
+    color:black;
+    text-align: center;
+}
+
+div{
+    
+    text-align: justify;/*para que ele se adeque, se alinhe à esquerda e à direita*/
+    text-indent: 30px;/*tamanho do parágrafo*/
+    color:rgb(177, 177, 177) ;
+
+}
+
+div > p {
+    display: none;
+    text-align: justify;/*para que ele se adeque, se alinhe à esquerda e à direita*/
+
+}
+
+div:hover > p {
+
+    display: table;
+    color:white;
+    background-color: black;
+    width: 300px;
+    height: 300px;
+
+}
+
+div:hover{/*muda o estado do objeto ao passar o mouse por cima*/
+    background-color: rgb(233, 233, 197);
+}
+
+
+/*outro exemplo de uso de hover*/
+#link:hover{
+    font-size: 17px;
+}
+
+/*______________________________________________________________________________________________________________________*/
+/*Trabalhando com links*/
+
+a{/*aplica uma cor a todos os ítens que contém um link*/
+    color:rgb(174, 214, 236);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:visited{/*aplica uma cor a todos os ítens que contém um link que já foi visitado*/
+    color:red;
+}
+
+a:hover{
+    color:azure;
+    text-decoration: underline;/*coloca um sublinhado quando passar o mouse*/
+}
+
+a:active{/*Enquanto o mouse clica o link*/
+    color: yellow;
+}
+
+a::after{/*após clicar em todos os links, gere um conteúdo, por exemplo*/
+    content:"link";
+    text-decoration: none;
+    font-size: 7px;
+    font-weight: lighter;
+    color:darkgray;
+
+}

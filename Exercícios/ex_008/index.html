@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatações de Textos</title>
+    <style>
+        mark{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito</h2>
+    <p>Aqui temos um <b>termo em negrito</b> usando a tag "b" </p> <!--<b> de bold, tranforma o texto dentro da tag em negrito, tag não semântica, sem significado, forma sem sentido, abaixo vai a forma semântica-->
+    <p>Aqui estamos usando a tag <strong>STRONG</strong>, visualmente tem o mesmo resultado, mas para o programa, são diferentes</p><!--o strong, além de dar a aparência, dá o sentido--><!--sempre usar esse-->
+    <!--agora itálico-->
+    <h2>Itálico</h2>
+    <P>Nesta frase, <i>temos um termo em itálico</i> (não semântico)</P>
+    <p>Nesta frase, <em>temos um termo em ênfase</em> (semântico)</p><!--Sempre usar esse-->
+    <h2>Texto marcado</h2>
+    <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <mark>Similique, provident animi corrupti error facere fuga consequuntur labore minima perferendis repellendus autem voluptatem sequi ipsum quis iste dolor facilis dolorum non!</mark></P><!--Loremzão clássico--><!--A tag mark, marca o texto específico--><!--você pode mudar a cor tbm usando style, que é tag de css, e botar qualquer cor-->
+    <h2>Letras miúdas</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatem, fugit
+        ducimus, temporibus recusandae laudantium <small>consectetur in dolores omnis odio</small>, expedita nisi. Ab quae iure vero doloribus? Neque, unde nostrum.</p><!--diferenciação de tamanhos, pode-se adicionar observações em letras pequenas, usando o comando <small>-->
+    <h2>Texto Excluído</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio expedita magnam sit vel laboriosam quia est nemo esse provident, <del>repellat quis accusantium temporibus quasi nobis? Magni esse corporis tenetur voluptatibus!</del></p><!--tag "del" para riscar o texto-->
+    <h2>Texto Inserido</h2>
+    <p>Lorem ipsum dolor sit amet <ins>consectetur adipisicing elit.</ins> Mollitia iste eligendi assumenda accusamus odio laudantium minus deleniti, ullam eveniet non, aperiam corrupti natus alias debitis sed? Placeat nulla aspernatur ea.</p><!--tag ins, para sublinhar o texto-->
+    <h2>Texto sobre escrito</h2>
+    <p>Coisas como X<sup>20</sup><sup>+3</sup></p><!--utilizando a tag sup-->
+    <h2>Texto Subescrito</h2>
+    <p>coisas como H<sub>2</sub>0</p><!--utilizando a tag sub-->
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon"><!--inclusão de favicon-->
+    <title>Estilos externos</title><!--Abaixo será adicionada a CSS-->
+    <!--por hierarquia, o inline tem maior prioridade, seguido pelo interno, seguido pelo link-->
+    <!--a linha abaixo coloca o estilo nessa página-->
+    <link rel="stylesheet" href="style.css"><!--Segure ctrl e clique em cima de um nome de arquivo que o próprio vscode cria-->
+    <style>/*especifica que nos h1 só dessa página serão sublinhados, ignorando o link da linha acima*/
+        h1{
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>Capítulo 1</h1>
+    <h2>Capítulo 1.1</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ullam harum, sint hic, culpa nesciunt velit ducimus ab ipsum cupiditate quos? Facilis, exercitationem assumenda reprehenderit debitis aperiam modi voluptatibus illum?</p>
+    <h2>Capítulo 1.2</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere labore similique voluptatibus quam accusantium cupiditate amet animi odio tenetur inventore, sapiente nulla libero, magnam, sit unde quod officia esse sed.</p>
+
+    <h1>Capítulo 2</h1>
+    <h2>Capítulo 2.1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id blanditiis facere odio! Explicabo animi modi suscipit ex iste tempora asperiores laborum consequuntur ad repudiandae. Ad quo at quisquam voluptas saepe!</p>
+    <h2>Capítulo 2.2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus velit molestiae sapiente voluptatibus tempore at iure nam corporis adipisci architecto amet deleniti fugiat, ratione nulla. Praesentium quaerat ad minus itaque?</p>
+
+    <hr>
+    <h1>Voltar</h1>
+    <p> Clique <a href="index.html" rel="next">aqui</a> para voltar para a primeira página</p>
+    <p style="text-align: right;">Ir para página 2 clique <a href="estilos_externos_pagina02.html">aqui</a></p><!--ainda assim um estilo interno ainda funciona, mesmo com alterações externas via link ou css interno-->
+
+</body>
+</html>

@@ -1,0 +1,320 @@
+@charset "UTF-8";
+
+@font-face {/*gotham bold*/
+    font-family: "bold";
+    src: url(fontes/Gotham-Font/Gotham-Bold.otf);
+}
+@font-face {/*gotham thin*/
+    font-family: "light";
+    src: url(fontes/Gotham-Font/Gotham-Light.otf);
+}
+@font-face {/*fonte do título do site*/
+    font-family: "capa";
+    src: url(fontes/Broisther.otf);
+}
+
+:root{/*variáveis globais*/
+
+    /*criação da paleda de cores e criação de variáveis para reutilizá-las*/
+
+--cor0:#F84211;
+--cor1:#022601;
+--cor2:#14301c;
+--cor3:#425540;
+--cor4:#79694c;
+--cor5:#ffcdbf;
+--cor6:rgb(53, 53, 53);
+--cor7:rgba(53, 53, 53, 0);
+
+/*separação das fontes*/
+
+--fonte-padrao:Arial, Verdana, Helvetica, sans-serif;/*usado nos parágrafos, links e listas*/
+--fontetitulo:'capa';/*fonte do título do site*/
+--fonteh2:'bold';/*fonte dos titulos internos no site, titulo tipo h2, usando a familia declarada nas importações do arquivo no inicio dessa pagina css*/
+--fonteh3:'light';/*fonte dos subtitulos internos do site*/
+
+}
+*{/*configuração global para todos os elementos do site. Foram alteradas margem e padding padrão*/
+    margin: 0px;/*margem e padding por definição serão nulas, cada seção terá uma especificada*/
+    padding: 0px;
+}
+body{ /*altera todos os body*/
+    background-image: linear-gradient(to top,var(--cor1),var(--cor2),var(--cor3));/*na hora de selecionar a cor, digite ctrl+espaço e vá até embaixo e terá a cor*/
+    background-attachment: fixed;
+    font-size: 1em;/*a w3c usa como padrão ou pixel (px) ou (em)* 16px é igual a 1 em*/
+    font: normal 16px Arial, Verdana, Serif;
+    /*text-decoration: underline;*//*comandos para sublinhar e outros*/
+
+}
+header{
+    
+    background-color: var(--cor0);/*separa uma "caixa" para a seção principal e diferencia do fundo*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+  
+}
+p#menusuperior{
+
+    text-align: center;
+    background-color:var(--cor5);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    
+
+}
+
+
+main{
+
+    background-image: linear-gradient(to top, var(--cor1),var(--cor4),var(--cor3));/*separa uma "caixa" para a seção principal e diferencia do fundo*/
+    border-radius: 5px;/*arredondamento de bordas*/
+    box-shadow: 5px 5px 15px var(--cor6);/*forma da sombra e cor da sombra*/
+    width: 80%;/*tamanho da caixa principal, pode ser em porcentagem, pixels, auto*/
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    
+}
+h1{/*títulos 1*/
+
+    color:var(--cor1) ;
+    text-align: center;
+    
+    font-family: var(--fontetitulo);
+    font-size: xx-large;
+
+    height: auto;/*brincando com os tamanhos de borda*/
+    width: auto;
+    border-width: 1px;
+    /*border-style: solid;
+    border-color: aliceblue;
+
+    /*brincando com padding, espaçamento interno*/
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+h2{/*títulos 2*/
+
+    color:var(--cor5) ;
+    font-family: var(--fonteh2);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to left, var(--cor7) 40%,var(--cor0));
+
+}
+h3{
+
+    color:var(--cor5) ;
+    font-family: var(--fonteh3);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+h4{
+
+    color:var(--cor5) ;
+    font-family: var(--fonteh3);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+p{/*parágrafos*/
+
+    text-align: justify;/*para que ele se adeque, se alinhe à esquerda e à direita*/
+    text-indent: 30px;/*tamanho do parágrafo*/
+    line-height: 20px;
+    color:var(--cor5) ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: var(--fonte-padrao);
+
+}
+
+div#imagem02{/*aplicando uma exceção à regra das imagens à imagem02*/
+
+    display: block;
+    margin: auto;
+    width: 60%;
+    max-width: 400px;
+
+}
+
+div#audio01{
+    
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+img{/*imagens por padrão não são blocos, assim como vídeos, é necessário inserir o comando display:block;*/
+
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+div#video01 >iframe{/*dessa forma, pode-se aplicar a configuração somente ao vídeo atual. Coloque um marcador <em html pode ser div, span, etc...> e após isso, especifique como elemento filgo o iframe para que a configuração surta efeito*/
+
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 700px;
+
+    /*
+    
+    Se quiser aplicar para todos os vídeos, siga o exemplo abaixo:
+    
+    iframe{
+
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 700px;
+}
+
+*/
+
+}
+div.listas{
+
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: var(--fonte-padrao);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--cor5);
+    
+ 
+}
+a{/*aplica uma cor a todos os ítens que contém um link*/
+
+    
+    color: var(--cor1);
+    font-weight: bolder;
+    font-family: var(--fonte-padrao);
+    padding-right: 40px;
+    padding-left: 40px;
+    margin: 20px 20px 20px 20px;
+    transition-duration: 0.3s;
+    border-radius: 3px;
+    text-decoration: none;
+
+    /*border-width: 1px;
+    border-style: solid;
+    border-color: aqua;/*mudando fatores da caixa de link, que por ser inline, não quebra linha*/
+
+}
+a:visited{/*aplica uma cor a todos os ítens que contém um link que já foi visitado*/
+
+    color:var(--cor1);
+
+}
+
+div#imagem01 > a:hover{/*para tirar o hover do link da imagem*/
+    background-color: rgba(0, 0, 0, 0);/*colocada a transparência*/
+}
+
+div#imagem02 > a:hover{/*para tirar o hover do link da imagem*/
+    background-color: rgba(0, 0, 0, 0);/*colocada a transparência*/
+}
+
+a:hover{
+
+    color:var(--cor3);
+    background-color: var(--cor0);
+
+}
+a:active{/*Enquanto o mouse clica o link*/
+
+    color: var(--cor0);
+
+}
+a::after{/*após clicar em todos os links, gere um conteúdo, por exemplo*/
+    /*content:"link";*/
+
+    font-size: 7px;
+    font-weight: lighter;
+    color:var(--cor6);
+    
+
+}
+hr{/*alterar cor da linha*/
+
+    border-color: var(--cor5);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+p#rodape{
+
+    color:var(--cor1);
+    text-align: center;
+    padding:2px;
+    font-weight: bold;
+
+}
+section{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+        margin: 0px 0px 0px 0px;
+        padding: 10px 10px 10px 10px;
+        border-radius: 25px;
+        box-shadow: 3px 3px 15px var(--cor1);
+}
+
+
+article{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor7));
+    margin: 0px 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 15px var(--cor1);
+}
+aside > .listas{/*altera somente as listas ordenadas dentros de aside, assuntos secundários*/
+    /*como as listas dentros de aside são parte de uma classe, é precisa especificar a classe e colocar o marcador específico para elas, pois se não, não surtirá efeito*/
+    
+        
+        list-style-position: outside; /*o número da lista está fora do texto, pode ser inside tbm*/
+        columns:1;
+        line-height: 20px;
+    }
+
+aside{
+        background-image: linear-gradient(to bottom, var(--cor2), var(--cor7));
+        margin: 0px 0px 0px 0px;
+        padding: 10px 10px 10px 10px;
+        border-radius: 25px;
+        box-shadow: 3px 3px 15px var(--cor1);
+}
+
+footer{
+    
+    background-color: var(--cor0);/*separa uma "caixa" para a seção principal e diferencia do fundo*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}

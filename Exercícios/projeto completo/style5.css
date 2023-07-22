@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@font-face {/*digitando o comando "font" ele já preenche essa parte automático, só sendo necessário colocar a url*/
+    font-family:'Love';
+    src: url('Broisther.otf');/*acrescente o comando "format(), digite uma segunda url para botar mais de um formato*/
+}
+
+*{/*Entrar no site google fonts*/
+
+    font-family: 'Arial';
+  
+}
+
+body{                                                        /*altera todos os body*/
+    background-image: linear-gradient(to top,#3D5A73,#28403D,#182625);
+    background-attachment: fixed;
+    font-size: 1em;/*a w3c usa como padrão ou pixel (px) ou (em)* 16px é igual a 1 em*/
+    font: normal 16px Arial, Verdana, Serif;
+    /*text-decoration: underline;*//*comandos para sublinhar e outros*/
+
+}
+
+main{
+    background-image: linear-gradient(to top,#455559,#28403D,#3D5A73);/*separa uma "caixa" para a seção principal e diferencia do fundo*/
+    border-radius: 5px;/*arredondamento de bordas*/
+    box-shadow: 5px 5px 15px rgb(53, 53, 53);/*forma a sombra e cor da sombra*/
+    width: 61%;/*tamanho da caixa principal, pode ser em porcentagem, pixels, auto*/
+    padding: 10px;
+    margin: auto;
+    
+}
+h1{/*títulos 1*/
+    color:rgb(177, 177, 177) ;
+    text-align: center;
+    
+    /*shorthand das fontes
+    
+    um comando que simplifica os 4 seguintes:
+
+    -font-style;
+    -font-weight;
+    font-size;
+    -fonte-family
+
+    deve seguir a mesma orde, style, weight, size e family
+    
+    veja a aplicação abaixo*/
+    font-family: 'Love';
+
+    height: auto;/*brincando com os tamanhos de borda*/
+    width: auto;
+    border-width: 1px;
+    /*border-style: solid;
+    border-color: aliceblue;
+
+    /*brincando com padding, espaçamento interno*/
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+
+
+}
+
+hr{/*alterar cor da linha*/
+    border-color: rgb(177, 177, 177);
+}
+.linhas{
+    width: auto;
+    border-width: 1px;
+    border-style:solid;
+}
+
+
+h2{/*títulos 2*/
+    color:rgb(177, 177, 177) ;
+    font-family: 'Arial';
+    text-align: center;
+
+}
+
+p{/*parágrafos*/
+    text-align: justify;/*para que ele se adeque, se alinhe à esquerda e à direita*/
+    text-indent: 30px;/*tamanho do parágrafo*/
+    color:rgb(177, 177, 177) ;
+}
+
+
+div{
+    
+    text-align: justify;/*para que ele se adeque, se alinhe à esquerda e à direita*/
+    text-indent: 30px;/*tamanho do parágrafo*/
+    color:rgb(177, 177, 177) ;
+
+}
+
+div > p {
+    display: none;
+    text-align: justify;/*para que ele se adeque, se alinhe à esquerda e à direita*/
+
+}
+
+div:hover > p {
+
+    display: table;
+    color:white;
+    background-color: black;
+    width: 300px;
+    height: 300px;
+
+}
+
+div:hover{/*muda o estado do objeto ao passar o mouse por cima*/
+    background-color: rgb(233, 233, 197);
+}
+
+
+/*outro exemplo de uso de hover*/
+#link:hover{
+    font-size: 17px;
+}
+
+/*______________________________________________________________________________________________________________________*/
+/*Trabalhando com links*/
+
+a{/*aplica uma cor a todos os ítens que contém um link*/
+    color:rgb(174, 214, 236);
+    text-decoration: none;
+    font-weight: bolder;
+    /*border-width: 1px;
+    border-style: solid;
+    border-color: aqua;/*mudando fatores da caixa de link, que por ser inline, não quebra linha*/
+
+}
+
+a:visited{/*aplica uma cor a todos os ítens que contém um link que já foi visitado*/
+    color:rgb(210, 162, 255);
+}
+
+a:hover{
+    color:azure;
+    text-decoration: underline;/*coloca um sublinhado quando passar o mouse*/
+}
+
+a:active{/*Enquanto o mouse clica o link*/
+    color: yellow;
+}
+
+a::after{/*após clicar em todos os links, gere um conteúdo, por exemplo*/
+    content:"link";
+    text-decoration: none;
+    font-size: 7px;
+    font-weight: lighter;
+    color:darkgray;
+
+}
+
+img{
+
+    margin:auto;
+    display: block;
+}
+
+div.video{
+    background-color: #28403D;
+    padding-bottom: 60%;
+    
+    position:relative;
+}
+div.video > iframe{
+    position:absolute;
+    top:5%;
+    left:5%;
+    width:50%;
+    height:50%;
+
+}
+header{
+    
+    background-image: linear-gradient(to top,#455559,#28403D,#3D5A73);/*separa uma "caixa" para a seção principal e diferencia do fundo*/
+    
+    
+}
+section{
+    color: antiquewhite;
+}
+article{
+    color: beige;
+}
+aside{
+    color: azure;
+}
